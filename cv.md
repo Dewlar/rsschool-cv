@@ -26,7 +26,7 @@ document.querySelector('.tree').addEventListener('click', (event) => {
 ```
 
 ### Work experience:
-Nothing yet in development.
+> Nothing yet in development.
 
 ### Education and courses:
 1. 1st year university course delphi programming in 2006.
@@ -37,4 +37,4 @@ Nothing yet in development.
     + etc youtube videos.
   
 ### Language:
-English level - A2
+> English level - A2
