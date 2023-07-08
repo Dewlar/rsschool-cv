@@ -4,7 +4,170 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="shortcut icon" href="https://rs.school/favicon.ico">
+    <link rel="apple-touch-icon" href="https://rs.school/apple-touch-icon.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="https://rs.school/apple-touch-icon.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="https://rs.school/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="https://rs.school/favicon-16x16.png">
+    <link rel="mask-icon" href="https://rs.school/safari-pinned-tab.svg" color="#000000">
+    <link rel="stylesheet" href="style.css">
+    <title>CV</title>
 </head>
-<body></body>
+<body>
+<header>
+    <div class="container">
+        <nav class="navigation">
+            <ul>
+                <li><a href="#about" class="header-menu__link">About</a></li>
+                <li><a href="#contact" class="header-menu__link">Contact</a></li>
+                <li><a href="#education" class="header-menu__link">Education</a></li>
+                <li><a href="#skills" class="header-menu__link">Skills</a></li>
+                <li><a href="#code" class="header-menu__link">Code</a></li>
+                <li><a href="#projects" class="header-menu__link">Projects</a></li>
+                <li><a href="#experience" class="header-menu__link">Work experience</a></li>
+            </ul>
+        </nav>
+        <div class="header">
+            <figure class="avatar">
+                <img src="assets/Bender_by_PaltZu.jpg" alt="avatar">
+            </figure>
+            <div class="fio">
+                <h1>Andrei Markouski</h1>
+            </div>
+            <div class="job-position">Front-End Developer</div>
+        </div>
+    </div>
+</header>
+<main>
+    <div class="container">
+        <section class="section-left">
+            <div class="about" id="about">
+                <h2>About</h2>
+                <p class="justify-text">My name is Andrei. I am 36 years old. For the last 8 years I have been working
+                    as a system
+                    administrator. Decided to change majors. I want to expand my knowledge in JS and node.js skills. The
+                    desire to solve more complex problems and find effective ways to solve emerging problems.</p>
+            </div>
+            <div class="contact" id="contact">
+                <h2>Contact</h2>
+                <ul>
+                    <li><a href="mailto:insawm@gmail.com">insawm@gmail.com</a></li>
+                    <li><a href="tel:+375295519013">+375 (29) 551-90-13</a></li>
+                    <li><a href="https://yandex.by/maps/-/CCUGbEdBSB">Minsk Region, Berezino</a></li>
+                    <li><a href="https://github.com/Dewlar">github.com/Dewlar</a></li>
+                    <li><a href="https://www.codewars.com/users/Dewlar">codewars.com/Dewlar</a></li>
+                </ul>
+            </div>
+            <div class="education" id="education">
+                <h2>Education</h2>
+                <p>Modeling and computer design of radio electronic means</p>
+                <p>BSUIR</p>
+                <p>September 2005 - June 2010</p>
+                <br>
+                <p>Information systems software</p>
+                <p>BSUIR IIT</p>
+                <p>September 2013 - June 2015</p>
+            </div>
+            <div class="skills" id="skills">
+                <h2>Skills</h2>
+                <p>HTML</p>
+                <p>CSS (SCSS)</p>
+                <p>JavaScript (ES6)</p>
+                <p>Angular</p>
+                <p>Angular material</p>
+                <p>Bootstrap</p>
+                <p>Git</p>
+                <br>
+                <p>university – Delphi</p>
+                <p>IIT BSUIR – C++, C#</p>
+            </div>
+        </section>
+        <section class="section-right">
+            <div class="projects" id="projects">
+                <h2>Projects</h2>
+                <div class="project__item">
+                    <div class="project__wrap">
+                        <h4>Todo app:</h4>
+                        <a href="https://github.com/Dewlar/angular-todo-app">github</a>
+                    </div>
+                    <p class="justify-text">Angular, angular material, typescript, rxjs, HTML, SCSS, mock local
+                        json-server for emulation
+                        http requests.</p>
+                </div>
+                <div class="project__item">
+                    <div class="project__wrap">
+                        <h4>News app:</h4>
+                        <a href="https://github.com/ShpakKate/News-app">github</a>
+                    </div>
+                    <p class="justify-text">Experience with Git. Added and configured ESlint (prettier config), husky &
+                        pre-commit git hooks.
+                        Code reviewing and resolving merge pull request conflicts.</p>
+                </div>
+            </div>
+            <div class="code" id="code">
+                <h2>Code</h2>
+<pre><code>document.<span class="selector">querySelector</span><span class="brackets">(</span><span class="variable">'.tree'</span><span class="brackets">)</span>.<span class="selector">addEventListener</span><span class="brackets">(</span><span class="variable">'click'</span><span class="brackets">, (</span>event<span class="brackets">) => {</span>
+  <span class="word">if</span> <span class="brackets">(</span>event.<span class="selector">target</span>.<span class="selector">matches</span><span class="brackets">(</span><span class="variable">'.title'</span><span class="brackets">)) {</span>
+    let title <span class="brackets">=</span> event.<span class="selector">target</span>.<span class="selector">nextSibling</span><span class="">;</span>
+    title.<span class="selector">classList</span>.<span class="selector">toggle</span><span class="brackets">(</span><span class="variable">'hide'</span><span class="brackets">);</span>
+
+    <span class="word">if</span> <span class="brackets">(</span>title.<span class="selector">classList</span>.<span class="selector">contains</span><span class="brackets">(</span><span class="variable">'hide'</span><span class="brackets">)) {</span>
+      event.<span class="selector">target</span>.<span class="selector">firstChild</span>.<span class="selector">textContent</span> <span class="brackets">=</span> <span class="variable">'+\u00A0'</span><span class="brackets">;</span>
+    <span class="brackets">}</span> <span class="word">else</span> <span class="brackets">{</span>
+      event.<span class="selector">target</span>.<span class="selector">firstChild</span>.<span class="selector">textContent</span> <span class="brackets">=</span> <span class="variable">'-\u00A0'</span><span class="brackets">;</span>
+    <span class="brackets">}</span>
+  <span class="brackets">}</span> <span class="word">else</span> <span class="brackets">{</span>
+    <span class="word">return</span><span class="brackets">;</span>
+  <span class="brackets">}</span>
+<span class="brackets">});</span></code></pre>
+            </div>
+            <div class="work-experience" id="experience">
+                <h2>Work experience</h2>
+                <h3>2023 – now / Self education & freelance experience</h3>
+                <p>Support and fix bugs on the website of the hunting weapon shop (CMS Bitrix).</p>
+                <h3>System Administrator Engineer</h3>
+                <h4>2014 - 2022 / Minsk Region, Berezino</h4>
+                <ul>
+                    <li class="justify-text">Configuring and maintaining the networked computer system, including hardware, system software,
+                        and applications.
+                    </li>
+                    <li class="justify-text">Diagnosing and resolving hardware, software, networking, and system issues when they arise.</li>
+                    <li class="justify-text">Purchase of equipment and components, replacement and upgrade of faulty ones if necessary.</li>
+                    <li class="justify-text">Providing technical support when requested.</li>
+                </ul>
+                <h4>What would I be proud of in my work:</h4>
+                <ul>
+                    <li class="justify-text">Optimization of the network infrastructure which reduced the monthly cost of its maintenance.
+                    </li>
+                    <li class="justify-text">Among the 22 regional centers and headquarters, I am the only one who was able to configure the
+                        Huawei USG6300 firewall to work with the S-TerraBel (Bel-VPN) software. Because I was able to
+                        find a major bug and fix the issue.
+                    </li>
+                </ul>
+            </div>
+        </section>
+    </div>
+</main>
+<footer>
+    <div class="container">
+        <a href="https://github.com/Dewlar" class="rw-Footer-link ml-2">
+            <svg
+                    width="1.03em"
+                    height="1em"
+                    viewBox="0 0 1536 1504"
+                    class="ux-icon ux-icon--fw mr-1 mt-[-0.2em]"
+            >
+                <path d="M768 0q209 0 385.5 103T1433 382.5T1536 768q0 251-146.5 451.5T1011 1497q-27 5-40-7t-13-30q0-3 .5-76.5t.5-134.5q0-97-52-142q57-6 102.5-18t94-39t81-66.5t53-105T1258 728q0-119-79-206q37-91-8-204q-28-9-81 11t-92 44l-38 24q-93-26-192-26t-192 26q-16-11-42.5-27T450 331.5T365 318q-45 113-8 204q-79 87-79 206q0 85 20.5 150T351 983t80.5 67t94 39t102.5 18q-39 36-49 103q-21 10-45 15t-57 5t-65.5-21.5T356 1146q-19-32-48.5-52t-49.5-24l-20-3q-21 0-29 4.5t-5 11.5t9 14t13 12l7 5q22 10 43.5 38t31.5 51l10 23q13 38 44 61.5t67 30t69.5 7t55.5-3.5l23-4q0 38 .5 88.5t.5 54.5q0 18-13 30t-40 7q-232-77-378.5-277.5T0 768q0-209 103-385.5T382.5 103T768 0zM291 1103q3-7-7-12q-10-3-13 2q-3 7 7 12q9 6 13-2zm31 34q7-5-2-16q-10-9-16-3q-7 5 2 16q10 10 16 3zm30 45q9-7 0-19q-8-13-17-6q-9 5 0 18t17 7zm42 42q8-8-4-19q-12-12-20-3q-9 8 4 19q12 12 20 3zm57 25q3-11-13-16q-15-4-19 7t13 15q15 6 19-6zm63 5q0-13-17-11q-16 0-16 11q0 13 17 11q16 0 16-11zm58-10q-2-11-18-9q-16 3-14 15t18 8t14-14z"
+                      fill="currentColor">
+                </path>
+            </svg>
+            <span>github.com/Dewlar</span>
+        </a>
+        <span>&copy; July 2023 by Dewlar</span>
+        <a href="https://rs.school/js/">
+            <img src="assets/rs_school_js.svg" alt="RS logo">
+        </a>
+    </div>
+</footer>
+</body>
 </html>
