@@ -35,6 +35,6 @@ document.querySelector('.tree').addEventListener('click', (event) => {
     + JavaScript https://learn.javascript.ru/
     + HTML and CSS http://htmlbook.ru/
     + etc youtube videos.
-  
+
 ### Language:
 > English level - A2
